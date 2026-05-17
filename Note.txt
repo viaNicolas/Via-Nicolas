@@ -1,0 +1,20 @@
+git init
+git add . (if any prob : git config --global core.autocrlf false)
+git commit -m "name" 
+git remote add origin https://github.com/RonyWeter/portfolio.git  (if already exist : git remote set origin https://github.com/RonyWeter/portfolio.git)
+git push -u origin main
+npm install -g angular-cli-ghpages
+ng build --configuration production --base-href "https://RonyWeter.github.io/Via-Nicolas/"
+ngh --dir dist/portfolio
+
+
+https://RonyWeter.github.io/portfolio/
+
+
+
+after pushing to add any change from my code :
+git add .
+git commit -m "your message"
+git push origin main
+npx ng build --configuration production --base-href "https://vianicolas.github.io/Via-Nicolas/"
+npx angular-cli-ghpages --dir=dist/via-nicolas/browser
